@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main-container{
+    width:100%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    
+
+}
+.mini-nav{
+    width: 100%;
+    height: 40px;
+    background-color: #1A4840;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.mini-nav h2{
+    font-size: 20px;
+    word-spacing: 5px;
+    font-weight: 400;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+}
+.navbar img{
+    width: 10%;
+}
+.navbar input{
+    width: 50%;
+    height: 70%;
+    font-size: 1rem;
+    padding-left: 3rem;
+    background-color: #EAE8E8;
+    border-radius: 0.3rem;
+    border: none;
+    
+}
+.navbar span i{
+  
+   font-size: 2rem;
+    padding-inline: 10px;
+    /* word-spacing: 3rem; */
+    /* background-color: red; */
+}
+
+.down-nav{
+    width: 100%;
+    height: 2rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 70px;
+}
+.down-nav ul{width: 60%;
+    font-size: 1rem;
+    color: white;
+    list-style: none;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    
+}
+.first-page{
+    width: 100vw;
+    height: auto;
+}
+.first-page img{
+    width: 100%;
+    
+    height: auto;
+background-size: cover;
+}
+
+
+.main-container h1{
+    /* font-size: ; */
+    font-weight: 400;
+    letter-spacing:1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.second-page{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.second-page button{
+    font-size: 1rem;
+    width: 110px;
+    height: 44px;
+    border: 1px solid grey;
+    background-color: transparent;
+}
+
+#bs{
+    font-size: 1rem;
+    width: 256px;
+    height: 44px;
+    border: 1px solid grey;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.third-page{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.box{
+    width: 338px;
+    height: 516px;
+    border: 0.2px solid rgb(237, 235, 235);
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 1px 7px 25px -17px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 7px 25px -17px rgba(0,0,0,0.75);
+box-shadow: 1px 7px 25px -17px rgba(0,0,0,0.75);
+    /* z-index: 1       ; */
+}
+.box .up{
+    height: 70%;
+    background-image: url(./card1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px 7px 7px 7px; 
+    display: flex; align-items: start;
+        justify-content: end;
+}
+.box .up button{
+        width: 43px;
+        height: 27px;
+        color: white;
+        background-color: #91d84a;
+        border: none;
+        border-radius: 0px 7px 0px 0px;
+        
+
+}
+.box .down{
+    height: 30%;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 28px;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+.down h3{
+    font-size: 18px;
+    font-weight: normal;
+}
+.down p{
+    font-size: 14px;
+}
+.down h2{
+    font-size: 15px;
+}
+.down h2 span{
+    color: #C20021;
+}
+.down button{
+    width: 100%;
+    height: 43px;
+    border-radius: 0px 0px 7px 7px;
+    border: none;
+    background-color: #00848d;
+    color: white;
+}
+.down button:hover{
+    background-color: #08b1bd ;
+}
+
+@media (max-width:768px){
+    .mini-nav{
+        display: none;
+    }
+    .navbar input{
+        display: none;
+    }
+    .navbar img{
+        width: 20%;
+    }   
+    .navbar span i{
+        font-size: 1.5rem;
+        padding-inline: 10px;
+
+    }
+    
+ 
+.down-nav ul{
+    width: 90%;
+    font-size: 0.7rem;
+}
+.first-page img{
+    width: 100vw;
+    height: auto;
+}
+.third-page{
+   flex-wrap: wrap;
+ 
+    
+    
+}
+}
